@@ -5602,6 +5602,48 @@ body.is-lock {
     font-size: 16px;
   }
 }
+:root {
+  --color-black: #333333;
+  --color--white: #fff;
+  --color--accent: #EC1B2E;
+}
+
+.school {
+  width: 100%;
+  padding: 150px 0px;
+}
+.school .container {
+  padding-left: 141px;
+}
+
+.school__block {
+  position: relative;
+  display: inline-block;
+  padding: 76px 90px;
+  border: 10px solid var(--color--accent);
+}
+
+.school__block-title {
+  position: absolute;
+  top: -50px;
+  left: 60px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  padding: 10px 30px;
+  color: var(--color-black);
+  background: var(--color--white);
+}
+
+.school__block-text {
+  max-width: 458px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--color-black);
+}
+
 .footer {
   margin-top: auto;
 }
