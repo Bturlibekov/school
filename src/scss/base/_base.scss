@@ -1,0 +1,48 @@
+@import "./base/vars";
+@import "./base/mixins";
+
+body {
+    color: teal;
+    font-family: Circe;
+
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.main__page {
+    width: 100%;
+}
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    position: relative;
+    transition: all 300ms ease 0ms;
+    color: $white;
+    background: $accent;
+
+    &:active {
+        transform: scale(1.05);
+    }
+}
+
+.btn--hero {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    padding: 15px 30px;
+    color: $white;
+}
